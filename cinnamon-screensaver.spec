@@ -1,6 +1,6 @@
 Name:    cinnamon-screensaver
 Version: 5.2.0
-Release: 2
+Release: 3
 Summary: Cinnamon Screensaver
 License: GPLv2+ and LGPLv2+
 URL:     https://github.com/linuxmint/%{name}
@@ -25,6 +25,7 @@ Requires: accountsservice-libs%{?_isa}
 Requires: libgnomekbd%{?_isa}
 Requires: python3-gobject%{?_isa}
 Requires: python3-setproctitle%{?_isa}
+Requires: python3-xapp
 Requires: python3-xapps-overrides%{?_isa}
 Requires: xapps%{?_isa}
 
@@ -86,6 +87,8 @@ rm %{buildroot}%{_datadir}/gir-1.0/CScreensaver-1.0.gir
 %{_libdir}/girepository-1.0/CScreensaver-1.0.typelib
 
 %changelog
+* Mon Jul 25 2022 wenlong ding <wenlong.ding@turbolinux.com.cn> - 5.2.0-3
+- Add Requires: python3-xapp
 * Mon May 27 2022 lin zhang <lin.zhang@turbolinux.com.cn> - 5.2.0-2
 - delete Requires: python3-xapp
 
